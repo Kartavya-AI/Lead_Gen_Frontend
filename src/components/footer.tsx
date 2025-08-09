@@ -8,12 +8,10 @@ function footer() {
                     {/* Logo + Description */}
                     <div>
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                            AIVidify
+                            LeadFlowAI
                         </h3>
                         <p className="mt-2 text-sm leading-relaxed">
-                          AI-powered platform to instantly generate clean, readable DCF analysis reports with key financial metrics, trends, and valuation insights — just by entering a company name.
-
-
+                            AI-powered platform that helps businesses discover qualified leads, personalize outreach at scale, and integrate seamlessly with CRM systems — all in one place.
                         </p>
                     </div>
 
@@ -30,17 +28,17 @@ function footer() {
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
-                                    Generate
+                                    Generate Leads
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
-                                    Docs
+                                    Analytics
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="hover:underline">
-                                    Contact
+                                    CRM Integration
                                 </a>
                             </li>
                         </ul>
@@ -73,7 +71,7 @@ function footer() {
 
                 {/* Bottom note */}
                 <div className="mt-10 text-center text-xs text-gray-500 dark:text-gray-500">
-                    © {new Date().getFullYear()} AIVidify. All rights reserved.
+                    © {new Date().getFullYear()} LeadFlowAI. All rights reserved.
                 </div>
             </footer>
         </div>

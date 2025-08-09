@@ -42,10 +42,10 @@ function Header() {
                         <Link href={"/"}>Home</Link>
                     </li>
                     <li>
-                        <Link href={"/query"}>Query</Link>
+                        <Link href={"/generate"}>Generate</Link>
                     </li>
                     <li>
-                        <Link href={"/Analyse"}>Analyse</Link>
+                        <Link href={"/csv"}>Csv</Link>
                     </li>
                 </ul>
 
@@ -82,10 +82,10 @@ function Header() {
                         <Link href={"/"}>Home</Link>
                     </li>
                     <li>
-                        <Link href={"/query"}>Query</Link>
+                        <Link href={"/generate"}>Generate</Link>
                     </li>
                     <li>
-                        <Link href={"/Analyse"}>Analyse</Link>
+                        <Link href={"/csv"}>Csv</Link>
                     </li>
                     <SignedOut>
                        <div> <SignInButton /></div>
