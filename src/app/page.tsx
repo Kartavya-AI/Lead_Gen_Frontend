@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/accordion";
 import Image from "next/image";
 import Link from "next/link";
-import imgLeadGen from '../../public/images/1be899e3-4564-49ea-b2cb-cc19e2711115.jpg'
+import imgLeadGen from "../../public/images/1be899e3-4564-49ea-b2cb-cc19e2711115.jpg";
 
 import { cn } from "@/lib/utils";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
@@ -91,11 +91,18 @@ export default function Home() {
                     platform.
                 </p>
 
-                <div className="">
-                    <Link href={"/generate"}>
-                        <ShimmerButton className="shadow-2xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 justify-center">
+                    <Link href={"/generate"} className="flex justify-center">
+                        <ShimmerButton className="shadow-2xl w-full max-w-[220px]">
                             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                                 Generate Leads
+                            </span>
+                        </ShimmerButton>
+                    </Link>
+                    <Link href={"/csv"} className="flex justify-center">
+                        <ShimmerButton className="shadow-2xl w-full max-w-[220px]">
+                            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                Generate From CSV
                             </span>
                         </ShimmerButton>
                     </Link>
@@ -132,9 +139,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-36 py-12">
+            <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-36 py-12 gap-8">
                 {/* Text Section */}
-                <div className="md:w-1/2 text-center md:text-left space-y-4">
+                <div className="md:w-1/2 text-center md:text-left space-y-6">
                     <h2 className="text-3xl md:text-5xl font-bold text-primary">
                         AI-Powered Lead Generation — Find, Qualify, and Engage
                         Prospects at Scale.
@@ -143,21 +150,31 @@ export default function Home() {
                         Automate lead discovery, personalize outreach, and
                         supercharge conversions with AI-driven targeting.
                     </p>
-                    <Link href={"/generate"}>
-                        <ShimmerButton className="shadow-2xl">
-                            <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                                Generate Leads
-                            </span>
-                        </ShimmerButton>
-                    </Link>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:justify-start justify-center">
+                        <Link href="/generate">
+                            <ShimmerButton className="w-full shadow-2xl">
+                                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                    Generate Leads
+                                </span>
+                            </ShimmerButton>
+                        </Link>
+                        <Link href="/csv">
+                            <ShimmerButton className="w-full shadow-2xl">
+                                <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                                    Generate From CSV
+                                </span>
+                            </ShimmerButton>
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Image Section */}
-                <div className="md:w-1/2 mt-10 md:mt-0">
+                <div className="md:w-1/2 flex justify-center md:justify-end">
                     <Image
                         src={imgLeadGen} // Replace with your actual image import
                         alt="Lead Generation Illustration"
-                        className="w-full max-w-md mx-auto"
+                        className="w-full max-w-md"
                     />
                 </div>
             </section>
@@ -222,8 +239,8 @@ export default function Home() {
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
                                 Yes. Our AI crafts dynamic, personalized emails
-                                tailored to each lead&apos;s profile, improving open
-                                and reply rates significantly.
+                                tailored to each lead&apos;s profile, improving
+                                open and reply rates significantly.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -235,9 +252,9 @@ export default function Home() {
                         <AccordionContent className="flex flex-col gap-4 text-balance">
                             <p>
                                 B2B companies, agencies, and startups looking to
-                                scale client acquisition can benefit. It&apos;s ideal
-                                for any business wanting to automate and enhance
-                                lead generation.
+                                scale client acquisition can benefit. It&apos;s
+                                ideal for any business wanting to automate and
+                                enhance lead generation.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
